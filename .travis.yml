@@ -8,7 +8,7 @@ before_install:
   
 
 script:
-  - docker run nayaunglin/react-test npm test -- --coverage
+  - docker run -e CI=true nayaunglin/react-test npm test
 
 
 after-success:
